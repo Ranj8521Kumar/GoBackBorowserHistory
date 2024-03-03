@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Back</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            color: white;
+            flex-direction: column;
+        }
+
+        .go-back{
+            padding: 5px 20px 5px 20px;
+            border: 1px solid white;
+            background-color: yellow;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        h1{
+            font-size: 250%;
+            line-height: 0.5;
+        }
+
+        .go-back:hover{
+            scale: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Go to back-Browser-History</h1>
+    <button class="go-back" onclick="goBack()">Go Back</button>
+
+
+    <script>
+        function goBack(){
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
